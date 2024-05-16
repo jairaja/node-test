@@ -9,18 +9,18 @@
     <div>I am test Site rendered within iFrame of Main site</div>
     <button onclick="buttonClicked()">Post to Auth with cookies</button>
     <script>
-      function onLoad() {
-        console.log("Test Page is loaded");
-        console.log(document.cookie);
-        location.replace("http://gbmlvvcsw5451.rbsres01.net:8080/Parent.html");
-      }
+      // function onLoad() {
+      //   console.log("Test Page is loaded");
+      //   console.log(document.cookie);
+      //   location.replace("http://gbmlvvcsw5451.rbsres01.net:8080/Parent.html");
+      // }
 
       function buttonClicked() {
         console.log("Post request from Main to Auth");
         console.log(document.cookie);
         const onButtonCLick = async () => {
           const response = await fetch(
-            "http://gbmlvvcsw5451.rbsres01.net:3001/post",
+            "https://node-auth-kvjp.onrender.com/post",
             {
               mode: "no-cors",
               method: "POST",
